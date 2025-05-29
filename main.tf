@@ -28,7 +28,7 @@ locals {
 }
 
 resource "oci_identity_compartment" "this" {
-  compartment_id = var.tenancy_ocid
+  compartment_id = var.compartment_ocid
   name           = var.name
   description    = var.description
   enable_delete  = true
