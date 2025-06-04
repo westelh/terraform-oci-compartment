@@ -22,6 +22,11 @@ variable "environment" {
   }
 }
 
+variable "value_is_required" {
+  type    = bool
+  default = false
+}
+
 variable "defined_tags" {
   type = map(string)
 }

@@ -41,7 +41,7 @@ resource "oci_identity_tag_default" "this" {
   compartment_id    = oci_identity_compartment.this.id
   tag_definition_id = data.oci_identity_tag.environment.id
   value             = var.environment
-  is_required       = true
+  is_required       = var.value_is_required
 }
 
 output "id" {
