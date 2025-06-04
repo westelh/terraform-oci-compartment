@@ -45,7 +45,7 @@ resource "oci_identity_tag_default" "this" {
 }
 
 output "id" {
-   value = oci_identity_compartment.this.id
-   description = "Created compartment ocid"
+  value       = oci_identity_compartment.this.id
+  description = "Created compartment ocid"
 }
 
